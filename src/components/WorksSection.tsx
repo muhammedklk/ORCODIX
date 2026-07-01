@@ -65,7 +65,7 @@ export default function WorksSection() {
     <section
       id="work"
       ref={containerRef}
-      className="relative w-full py-20 sm:py-28 md:py-32 bg-[var(--background)] transition-colors duration-400 select-none overflow-hidden border-t border-[var(--nav-border)]/20 md:cursor-none scroll-mt-28"
+      className="relative w-full py-20 sm:py-28 md:py-32 bg-[var(--background)] transition-colors duration-400 select-none overflow-hidden border-t border-[var(--nav-border)]/20 scroll-mt-28"
     >
       {/* Premium Custom Cursor Overlay */}
       <CustomCursor containerRef={containerRef} isHovered={isHoveredCard} />
@@ -109,7 +109,7 @@ export default function WorksSection() {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="group cursor-pointer flex flex-col gap-4"
+              className="group cursor-pointer flex flex-col gap-4 md:cursor-none"
               onMouseEnter={() => setIsHoveredCard(true)}
               onMouseLeave={() => setIsHoveredCard(false)}
             >

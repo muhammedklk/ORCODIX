@@ -172,7 +172,7 @@ export default function WorksPage() {
   return (
     <main 
       ref={containerRef}
-      className="relative min-h-screen overflow-hidden bg-[var(--background)] text-[var(--foreground)] selection:bg-[#FF7F37]/20 md:cursor-none"
+      className="relative min-h-screen overflow-hidden bg-[var(--background)] text-[var(--foreground)] selection:bg-[#FF7F37]/20"
     >
       <Navbar />
 
@@ -305,7 +305,7 @@ export default function WorksPage() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.92 }}
                 transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-                className="group flex flex-col gap-5"
+                className="group flex flex-col gap-5 md:cursor-none"
                 onMouseEnter={() => setIsHoveredCard(true)}
                 onMouseLeave={() => setIsHoveredCard(false)}
               >

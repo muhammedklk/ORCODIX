@@ -67,7 +67,7 @@ export default function CustomCursor({ containerRef, isHovered }: CustomCursorPr
 
   return (
     <AnimatePresence>
-      {isVisible && (
+      {isVisible && isHovered && (
         <motion.div
           style={{
             x: cursorX,
